@@ -1,25 +1,40 @@
+// ======== Theme HEX Codes ========
+// Teal: 236476 (comments)
+// Light Blue: 68B8C1
+// Light Gray: D2D2D0
+// Deep Pink: A94382
+// Light Pink: FB90A2
+// Purple: 5F3865
+// Yellow: E3C07C
+// Salmon: F78C6C
+// Green: 7DAD3F 
 {
 	"name": "Celebrate Girls",
 	"type": "dark",
 	"colors": {
+		// Backgrounds
 		"editor.background": "#121212",
-		"contrastActiveBorder": "#121212",
-
-		"scrollbarSlider.activeBackground": "#A94382",
-		"scrollbarSlider.background": "#3A3B3B",
-
-		//Highlighter
-		"editor.lineHighlightBorder": "#121212",
-		"editor.selectionForeground": "#303B27",
-		"editor.selectionBackground": "#8FAD74",
-		"editor.selectionHighlightBackground":"#3A3B3B",
-		"editor.inactiveSelectionBackground":"#8FAD74",
-
+		"panel.background": "#393B3B",
+		"statusBarItem.activeBackground": "#3A3B3B",
 		
+
+		// Scroll Bar
+		"scrollbarSlider.activeBackground": "#5F3865",
+		// "scrollbarSlider.background": "#5F3865",		//Covers the error messages on the scroll bar if set
+
+		//Highlighter Selection
+		"editor.lineHighlightBorder": "#121212",
+		"editor.selectionForeground": "#303B27",	//Only affects High Contrast
+		"editor.selectionBackground": "#3A3B3B",
+		"editor.selectionHighlightBackground":"#3A3B3B",
+		"editor.inactiveSelectionBackground":"#515252",
+
+		// MiniMap
+		"minimap.selectionHighlight":"#FB90A2",
 
 
 		"diffEditor.border": "#131212",
-		//Editor Popup Widget
+		// Editor Popup Widget
 		"editorWidget.border": "#121212",
 		"editorWidget.background": "#3A3B3B",
 		"editorWidget.foreground": "#EDF0F0",
@@ -27,22 +42,19 @@
 		"menu.border": "#171415",
 		"terminal.border": "#131212",
 		"window.activeBorder": "#131212",
-		"contrastBorder": "#171415",
 		"panel.border": "#171415",
 		
-		//Text Color
+		// Text Color
 		"editorLineNumber.foreground": "#EDF0F0",	//Line Numbers
-		"tab.activeForeground": "#EDF0F0",			//Tabs
-		"tab.inactiveForeground": "#d2d2d0",
+		"tab.activeForeground": "#EDF0F0",			//Active Tabs
+		"tab.inactiveForeground": "#d2d2d0",		//Inactive Tabs
 		"sideBarTitle.foreground": "#EDF0F0",
 		"sideBarSectionHeader.foreground": "#121212",
-		//Button
+		
+		// Button
 		"button.background": "#8F396E",
 				
-		"panel.background": "#393B3B",
-		"statusBarItem.activeBackground": "#3A3B3B",
-		
-		//Menu + Activity Bar Background
+		// Menu + Activity Bar Background
 		"activityBar.activeBorder": "#FB90A2",
 		"activityBar.background": "#FB90A2",
 		"activityBar.border": "#FB90A2",
@@ -58,8 +70,8 @@
 		"menu.background": "#484A4A",
 		
 
-		//Tab Sidebar Background + Border
-		"activityBar.activeBackground": "#ff0000",
+		// Tab Sidebar Background + Border
+		"activityBar.activeBackground": "#FB90A2",
 		"sideBarSectionHeader.background": "#FB90A2",	//Header
 		"sideBarSectionHeader.border": "#292727",		//Header
 		"sideBar.background": "#303030",
@@ -70,39 +82,33 @@
 		"sideBar.border":"#3A3B3B",
 		
 		
-		//Misc Borders
+		// Misc Borders
 		"tab.border": "#121212",
-		"focusBorder": "#752F5A",
+		"focusBorder": "#303030",
 		"selection.background":"#303030",
 		"tab.unfocusedHoverBorder": "#FB90A2",
-		//"tab.activeBorder": "#ff0000"
-		"statusBarItem.prominentHoverBackground": "#ff0000",
-		"statusBarItem.hoverBackground": "#ff0000",
-		"statusBarItem.prominentBackground": "#ff0000",
-		"statusBarItem.prominentForeground": "#ff0000",
-		"statusBarItem.remoteBackground": "#ff0000",
-		"statusBarItem.remoteForeground": "#ff0000",
+		
+		// List + Trees like the file selection
+		"list.activeSelectionBackground":"#626363",		//Selected file
+		"list.errorForeground":"#B30000",
+		"list.warningForeground": "#68B8C1",
+		"list.invalidItemForeground": "#F0414F",
+		"editorGroup.dropBackground":"#A94382",
+		"editorGroup.border":"#000000",
 
-		//Status Bar (bottom of workbench)
 		"statusBar.background": "#303030",
 
 
-		//GIT TODO WHen merge conflict.
-		
+		// ======== GIT ========
+		// TODO: Merge Conflicts
+		// Git File
+		"gitDecoration.modifiedResourceForeground":"#A94382",
+		"gitDecoration.addedResourceForeground":"#7DAD3F",
+		"gitDecoration.untrackedResourceForeground":"#E3C07C"
 
 
 	},
-	//THeme colors 
-	// Teal: 236476
-	// Light Blue: 68B8C1
-	// Light Gray: D2D2D0
-	// Deep Pink: A94382
-	// Light Pink: FB90A2
-	// Purple: 5F3865
-	// Yellow: E3C07C
-	// Salmon: F78C6C
-	// Green: 7DAD3F (comments)
-	//JavaScript
+	// ====== Basic ======
 	"tokenColors": [
 		{
 			"name": "Comment",
@@ -177,16 +183,17 @@
 				"meta.function-call",
 				"variable.function",
 				"support.function",
-				"keyword.other.special-method"
+				"keyword.other.special-method",
 			],
 			"settings": {
-				"foreground": "#A94382"
+				"foreground": "#A94382"		//Deep Pink
 			}
 		},
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other"
+				"meta.block variable.other",
+				"entity.other.attribute-name.html"
 			],
 			"settings": {
 				"foreground": "#91B066"	//Green
@@ -224,7 +231,6 @@
 				"markup.inserted.git_gutter",
 				"entity.other.inherited-class",
 				"string constant.other.placeholder",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
 			],
 			"settings": {
 				"foreground": "#68B8C1"		//Light Blue
@@ -246,12 +252,16 @@
 				"constant.other.color",
 				"meta.tag",
 				"keyword.other.template",
-				"keyword.other.substitution"
+				"keyword.other.substitution",
+				"entity.name.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
 			],
 			"settings": {
 				"foreground": "#FB90A2"	//Pink
 			}
 		},
+		//	=========== CSS ============
 		{
 			"name": "CSS Class and Support",
 			"scope": [
@@ -264,7 +274,44 @@
 				"source.postcss support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#68B8C1"		//Light Blue
+			}
+		},
+		{
+			"name": "CSS Class",
+			"scope": [
+				"entity.name.tag.css"
+			],
+			"settings": {
+				"foreground": "#FB90A2"		//Light Pink
+			}
+		},
+		{
+			"name": "CSS Key",
+			"scope": [
+				"support.type.property-name.css"
+			],
+			"settings": {
+				"foreground": "#7DAD3F"		//green
+			}
+		},
+		//	=========== JavaScript ============
+		{
+			"name": "JavaScript Tags",
+			"scope": [
+				"entity.name.tag.js"
+			],
+			"settings": {
+				"foreground": "#FB90A2"		//Light Pink
+			}
+		},
+		{
+			"name": "JavaScript Tags",
+			"scope": [
+				"meta.jsx.children.js"
+			],
+			"settings": {
+				"foreground": "#7DAD3F"		//Green
 			}
 		},
 		{
@@ -279,13 +326,33 @@
 			}
 		},
 		{
-			"name": "Language methods",
+			"name": "Decorators",
 			"scope": [
-				"variable.language"
+				"tag.decorator.js entity.name.tag.js",
+				"tag.decorator.js punctuation.definition.tag.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#DCDDE2"
+			}
+		},
+		{
+			"name": "ES7 Bind Operator",
+			"scope": [
+				"source.js constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "Curly Brackets",
+			"scope": [
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+			],
+			"settings": {
+				"foreground": "#68B8C1"		//Light Blue
 			}
 		},
 		{
@@ -309,23 +376,26 @@
 			}
 		},
 		{
+			"name": "Language methods",
+			"scope": [
+				"variable.language"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#FF5370"
+			}
+		},
+		{
 			"name": "HTML Attributes",
 			"scope": [
 				"text.html.basic entity.other.attribute-name.html",
 				"text.html.basic entity.other.attribute-name",
-				"entity.other.attribute-name.html"
+				"entity.other.attribute-name.class",
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+				"constant.other.reference.link.markdown"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FFCB6B"
-			}
-		},
-		{
-			"name": "CSS Classes",
-			"scope": [
-				"entity.other.attribute-name.class"
-			],
-			"settings": {
 				"foreground": "#FFCB6B"
 			}
 		},
@@ -385,27 +455,6 @@
 				"fontStyle": "underline"
 			}
 		},
-		{
-			"name": "Decorators",
-			"scope": [
-				"tag.decorator.js entity.name.tag.js",
-				"tag.decorator.js punctuation.definition.tag.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#DCDDE2"
-			}
-		},
-		{
-			"name": "ES7 Bind Operator",
-			"scope": [
-				"source.js constant.other.object.key.js string.unquoted.label.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FF5370"
-			}
-		},
 		// ============= JSON ============
 		{
 			"name": "JSON Key - Level 0",
@@ -414,15 +463,6 @@
 			],
 			"settings": {
 				"foreground": "#C28189"
-			}
-		},
-		{
-			"name": "JSON Key - Level 1",
-			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#FFCB6B"
 			}
 		},
 		{
@@ -468,6 +508,34 @@
 			],
 			"settings": {
 				"foreground": "#C3E88D"
+			}
+		},
+		{
+			"name": "JSON Value double quoted",
+			"scope": [
+				"string.quoted.double.json"
+			],
+			"settings": {
+				"foreground": "#7DAD3F"			// Green
+			}
+		},
+		{
+			"name": "JSON Value double quoted",
+			"scope": [
+				"support.type.property-name.json"
+			],
+			"settings": {
+				"foreground": "#68B8C1"			// Blue
+			}
+		},
+		// ============ Python =============
+		{
+			"name": "Python object",
+			"scope": [
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#7DAD3F"			// Blue
 			}
 		},
 		// ============ Markdown ==============
@@ -523,8 +591,6 @@
 				"markup.italic markup.bold string",
 				"markup.quote markup.bold string",
 				"punctuation.definition.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
 				"entity.name.tag",
 				"meta.tag.sgml",
 				"markup.deleted.git_gutter",
@@ -570,15 +636,6 @@
 			],
 			"settings": {
 				"foreground": "#C28189"
-			}
-		},
-		{
-			"name": "Markdown - Link Anchor",
-			"scope": [
-				"constant.other.reference.link.markdown"
-			],
-			"settings": {
-				"foreground": "#FFCB6B"
 			}
 		},
 		{

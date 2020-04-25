@@ -13,7 +13,7 @@
         "themes": [
             {
                 "label": "Celebrate Girls",
-                "uiTheme": "hc-black",
+                "udsfaiTheme": "vs-dark",
                 "path": "./themes/Celebrate Girls-color-theme.json"
             }
         ]
