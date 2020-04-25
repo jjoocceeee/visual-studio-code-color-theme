@@ -1,0 +1,21 @@
+{
+    "name": "celebrate-girls",
+    "displayName": "Celebrate Girls",
+    "description": "A feminine Color Theme. Because you can be feminine and smart!",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Celebrate Girls",
+                "uiTheme": "hc-black",
+                "path": "./themes/Celebrate Girls-color-theme.json"
+            }
+        ]
+    }
+}
