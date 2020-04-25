@@ -1,13 +1,14 @@
-# README
-## This is the README for your extension "celebrate-girls"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## About
+This Repo is a boiler plate for creating your own Visual Studio Code Color Theme.
+The process is very simple, includes just changing JSON key value pairs to be how you desire.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+Although the process is very simple, there are many, many, many key value pairs to assign. To make things even more complicated, there are different theme sources for different languages. So your theme may look great in Python, but looks awful in C#, or Markdown, or javaScript, or whatever.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+This Boiler Plate seperates the main language sources out, so you have can easy specific control over how your theme looks for each language. 
 
+Additionally, there is a folder which contains files of many of the popular languages so you can easily view any changes you make to your theme for many different languages.
+
+Enjoy!
+## Getting Started
+To start editing yoru theme, instructions are found in vsc-extension-quickstart.md
 **Enjoy!**
