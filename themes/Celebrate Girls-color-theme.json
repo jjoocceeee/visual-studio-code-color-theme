@@ -6,7 +6,7 @@
 // Light Pink: FB90A2
 // Purple: 5F3865
 // Yellow: E3C07C
-// Salmon: F78C6C
+// Peach: F78C6C
 // Green: 7DAD3F 
 {
 	"name": "Celebrate Girls",
@@ -164,7 +164,7 @@
 				"text.html.derivative"
 			],
 			"settings": {
-				"foreground": "#D2D2D0"
+				"foreground": "#D2D2D0"		//White
 			}
 		},
 		{
@@ -536,6 +536,46 @@
 			],
 			"settings": {
 				"foreground": "#7DAD3F"			// Blue
+			}
+		},
+		// ============ C# =============
+		{
+			"name": "Using",
+			"scope": [
+				"keyword.other.using.cs"
+			],
+			"settings": {
+				"foreground": "#D2D2D0"			// white
+			}
+		},
+		{
+			"name": "namespace, Object",
+			"scope": [
+				"keyword.other.namespace.cs",
+				"variable.other.object.cs"
+			],
+			"settings": {
+				"foreground": "#7DAD3F"		// Green
+			}
+		},
+		{
+			"name": "Storage Type e.g. string",
+			"scope": [
+				"storage.type.cs"
+			],
+			"settings": {
+				"foreground": "#E3C07C"		//Yellow
+
+			}
+		},		
+		{
+			"name": "Keyword Type e.g. void, class, parameter type",
+			"scope": [
+				"keyword.type.cs"
+			],
+			"settings": {
+				"foreground": "#F78C6C"		//Peach
+
 			}
 		},
 		// ============ Markdown ==============
