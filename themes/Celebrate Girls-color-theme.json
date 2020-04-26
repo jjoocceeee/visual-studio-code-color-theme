@@ -7,7 +7,7 @@
 // Purple: 5F3865
 // Yellow: E3C07C
 // Peach: F78C6C
-// Green: 7DAD3F 
+// Green: AAC67D 
 {
 	"name": "Celebrate Girls",
 	"type": "dark",
@@ -19,7 +19,7 @@
 		
 
 		// Scroll Bar
-		"scrollbarSlider.activeBackground": "#5F3865",
+		"scrollbarSlider.activeBackground": "#f5e0f8",
 		// "scrollbarSlider.background": "#5F3865",		//Covers the error messages on the scroll bar if set
 
 		//Highlighter Selection
@@ -196,7 +196,7 @@
 				"entity.other.attribute-name.html"
 			],
 			"settings": {
-				"foreground": "#91B066"	//Green
+				"foreground": "#AAC67D"	//Green
 			}
 		},
 		{
@@ -299,7 +299,8 @@
 		{
 			"name": "JavaScript Tags",
 			"scope": [
-				"entity.name.tag.js"
+				"entity.name.tag.js",
+				"variable.other.object.ts"
 			],
 			"settings": {
 				"foreground": "#FB90A2"		//Light Pink
@@ -308,10 +309,11 @@
 		{
 			"name": "JavaScript Tags",
 			"scope": [
-				"meta.jsx.children.js"
+				"meta.jsx.children.js",
+				"meta.object-literal.key.ts"
 			],
 			"settings": {
-				"foreground": "#7DAD3F"		//Green
+				"foreground": "#AAC67D"		//Green
 			}
 		},
 		{
@@ -329,11 +331,12 @@
 			"name": "Decorators",
 			"scope": [
 				"tag.decorator.js entity.name.tag.js",
-				"tag.decorator.js punctuation.definition.tag.js"
+				"tag.decorator.js punctuation.definition.tag.js",
+				"storage.type.function.arrow.ts"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#DCDDE2"
+				"foreground": "#DCDDE2"				//White
 			}
 		},
 		{
@@ -516,7 +519,7 @@
 				"string.quoted.double.json"
 			],
 			"settings": {
-				"foreground": "#7DAD3F"			// Green
+				"foreground": "#AAC67D"			// Green
 			}
 		},
 		{
@@ -535,7 +538,7 @@
 				"source.python"
 			],
 			"settings": {
-				"foreground": "#7DAD3F"			// Blue
+				"foreground": "#AAC67D"			// Green
 			}
 		},
 		// ============ C# =============
@@ -555,7 +558,7 @@
 				"variable.other.object.cs"
 			],
 			"settings": {
-				"foreground": "#7DAD3F"		// Green
+				"foreground": "#AAC67D"		// Green
 			}
 		},
 		{

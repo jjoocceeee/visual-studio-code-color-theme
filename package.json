@@ -1,10 +1,16 @@
 {
-    "name": "celebrate-girls",
-    "displayName": "Celebrate Girls",
-    "description": "A feminine Color Theme. Because you can be feminine and smart!",
+    "name": "feminine-code",
+    "displayName": "Feminine Color Theme",
+    "description": "A feminine Color Theme. Because you can be female, love pink, AND still be an awesome programmer.",
     "version": "0.0.1",
+    "icon": "images/logo1.png",
+    "publisher":"jjoocceeee",
     "engines": {
         "vscode": "^1.44.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jjoocceeee/visual-studio-code-color-theme"
     },
     "categories": [
         "Themes"
@@ -12,7 +18,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "Celebrate Girls",
+                "label": "Feminine_code",
                 "udsfaiTheme": "vs-dark",
                 "path": "./themes/Celebrate Girls-color-theme.json"
             }
