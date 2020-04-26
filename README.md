@@ -5,7 +5,7 @@ One of the easiest ways to encourage more girls to enter stem is to market techn
 
 ![Theme Example](/images/showcase.png)
 
-"Brought to you by [JoCee](https://www.instagram.com/jocee.holladay/)
+Brought to you by [JoCee](https://www.instagram.com/jocee.holladay/)
 
 
 
