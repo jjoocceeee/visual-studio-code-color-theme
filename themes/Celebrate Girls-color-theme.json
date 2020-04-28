@@ -155,7 +155,6 @@
 			"name": "Function, Special Method",
 			"scope": [
 				"entity.name.function",
-				"meta.function-call",
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method",
@@ -166,7 +165,7 @@
 			}
 		},
 		{
-			"name": "Properties",
+			"name": "Properties, Meta Function calls",
 			"scope": [
 				"meta.object-literal",
 				"met.object.member",
